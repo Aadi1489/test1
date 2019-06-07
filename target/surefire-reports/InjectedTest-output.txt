@@ -1,0 +1,71 @@
+Running tests for org.jenkins-ci.plugins:sonar:2.9-SNAPSHOT
+May 16, 2019 1:39:52 PM org.eclipse.jetty.util.log.Log initialized
+INFO: Logging initialized @6317ms to org.eclipse.jetty.util.log.Slf4jLog
+May 16, 2019 1:39:58 PM org.jvnet.hudson.test.WarExploder explode
+INFO: Exploding /root/.m2/repository/org/jenkins-ci/main/jenkins-war/2.89.4/jenkins-war-2.89.4.war into /opt/git-repo/target/jenkins-for-test
+May 16, 2019 1:40:15 PM org.eclipse.jetty.server.handler.ContextHandler setContextPath
+WARNING: Empty contextPath
+May 16, 2019 1:40:16 PM org.eclipse.jetty.server.Server doStart
+INFO: jetty-9.4.5.v20170502
+May 16, 2019 1:40:16 PM org.eclipse.jetty.webapp.StandardDescriptorProcessor visitServlet
+INFO: NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+May 16, 2019 1:40:17 PM org.eclipse.jetty.server.session.DefaultSessionIdManager doStart
+INFO: DefaultSessionIdManager workerName=node0
+May 16, 2019 1:40:17 PM org.eclipse.jetty.server.session.DefaultSessionIdManager doStart
+INFO: No SessionScavenger set, using defaults
+May 16, 2019 1:40:17 PM org.eclipse.jetty.server.session.HouseKeeper startScavenging
+INFO: Scavenging every 600000ms
+May 16, 2019 1:40:17 PM org.eclipse.jetty.server.handler.ContextHandler doStart
+INFO: Started o.e.j.w.WebAppContext@1601e47{/,file:///opt/git-repo/target/jenkins-for-test/,AVAILABLE}{/opt/git-repo/target/jenkins-for-test}
+May 16, 2019 1:40:18 PM org.eclipse.jetty.server.AbstractConnector doStart
+INFO: Started ServerConnector@5ae81e1{HTTP/1.1,[http/1.1]}{localhost:38027}
+May 16, 2019 1:40:18 PM org.eclipse.jetty.server.Server doStart
+INFO: Started @31679ms
+May 16, 2019 1:40:23 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+May 16, 2019 1:40:27 PM hudson.ClassicPluginStrategy createClassJarFromWebInfClasses
+WARNING: Created /opt/git-repo/target/tmp/jenkins450071303072873089tmp/icon-shim/WEB-INF/lib/classes.jar; update plugin to a version created with a newer harness
+May 16, 2019 1:40:27 PM hudson.ClassicPluginStrategy createClassJarFromWebInfClasses
+WARNING: Created /opt/git-repo/target/tmp/jenkins450071303072873089tmp/authentication-tokens/WEB-INF/lib/classes.jar; update plugin to a version created with a newer harness
+May 16, 2019 1:40:28 PM hudson.ClassicPluginStrategy createClassJarFromWebInfClasses
+WARNING: Created /opt/git-repo/target/tmp/jenkins450071303072873089tmp/git-server/WEB-INF/lib/classes.jar; update plugin to a version created with a newer harness
+May 16, 2019 1:40:28 PM hudson.ClassicPluginStrategy createClassJarFromWebInfClasses
+WARNING: Created /opt/git-repo/target/tmp/jenkins450071303072873089tmp/javadoc/WEB-INF/lib/classes.jar; update plugin to a version created with a newer harness
+May 16, 2019 1:40:29 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+May 16, 2019 1:40:47 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+May 16, 2019 1:40:47 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+May 16, 2019 1:40:51 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+May 16, 2019 1:40:51 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+May 16, 2019 1:40:52 PM jenkins.slaves.DeprecatedAgentProtocolMonitor initializerCheck
+WARNING: This Jenkins instance uses deprecated Remoting protocols: CLI2-connect,JNLP2-connect,JNLP3-connectIt may impact stability of the instance. If newer protocol versions are supported by all system components (agents, CLI and other clients), it is highly recommended to disable the deprecated protocols.
+May 16, 2019 1:40:52 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+May 16, 2019 1:40:52 PM org.eclipse.jetty.server.Server doStart
+INFO: jetty-9.4.5.v20170502
+May 16, 2019 1:40:52 PM org.eclipse.jetty.server.session.DefaultSessionIdManager doStart
+INFO: DefaultSessionIdManager workerName=node0
+May 16, 2019 1:40:52 PM org.eclipse.jetty.server.session.DefaultSessionIdManager doStart
+INFO: No SessionScavenger set, using defaults
+May 16, 2019 1:40:52 PM org.eclipse.jetty.server.session.HouseKeeper startScavenging
+INFO: Scavenging every 600000ms
+May 16, 2019 1:40:52 PM org.eclipse.jetty.server.handler.ContextHandler doStart
+INFO: Started o.e.j.s.ServletContextHandler@27494e46{/,null,AVAILABLE}
+May 16, 2019 1:40:52 PM org.eclipse.jetty.server.AbstractConnector doStart
+INFO: Started ServerConnector@3e6fd0b9{HTTP/1.1,[http/1.1]}{0.0.0.0:41167}
+May 16, 2019 1:40:52 PM org.eclipse.jetty.server.Server doStart
+INFO: Started @66078ms
+May 16, 2019 1:41:04 PM org.eclipse.jetty.server.AbstractConnector doStop
+INFO: Stopped ServerConnector@5ae81e1{HTTP/1.1,[http/1.1]}{localhost:0}
+May 16, 2019 1:41:04 PM org.eclipse.jetty.server.session.HouseKeeper stopScavenging
+INFO: Stopped scavenging
+May 16, 2019 1:41:04 PM org.eclipse.jetty.server.handler.ContextHandler doStop
+INFO: Stopped o.e.j.w.WebAppContext@1601e47{/,file:///opt/git-repo/target/jenkins-for-test/,UNAVAILABLE}{/opt/git-repo/target/jenkins-for-test}
+May 16, 2019 1:41:04 PM jenkins.model.Jenkins cleanUp
+INFO: Stopping Jenkins
+May 16, 2019 1:41:04 PM jenkins.model.Jenkins cleanUp
+INFO: Jenkins stopped

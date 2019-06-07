@@ -1,0 +1,37 @@
+=== Starting testMigration(hudson.plugins.sonar.SonarGlobalConfigurationTest)
+   0.027 [id=989]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:33027/jenkins/
+   0.064 [id=995]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.066 [id=998]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.230 [id=996]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.230 [id=998]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.338 [id=1000]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.341 [id=1000]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.356 [id=1000]	WARNING	j.s.DeprecatedAgentProtocolMonitor#initializerCheck: This Jenkins instance uses deprecated Remoting protocols: CLI2-connect,JNLP2-connect,JNLP3-connectIt may impact stability of the instance. If newer protocol versions are supported by all system components (agents, CLI and other clients), it is highly recommended to disable the deprecated protocols.
+   0.359 [id=995]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.375 [id=989]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.382 [id=989]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+=== Starting testMandatory(hudson.plugins.sonar.SonarGlobalConfigurationTest)
+   0.009 [id=1020]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:38967/jenkins/
+   0.040 [id=1026]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.045 [id=1030]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.210 [id=1026]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.211 [id=1030]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.326 [id=1033]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.330 [id=1026]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.349 [id=1031]	WARNING	j.s.DeprecatedAgentProtocolMonitor#initializerCheck: This Jenkins instance uses deprecated Remoting protocols: CLI2-connect,JNLP2-connect,JNLP3-connectIt may impact stability of the instance. If newer protocol versions are supported by all system components (agents, CLI and other clients), it is highly recommended to disable the deprecated protocols.
+   0.352 [id=1027]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.405 [id=1020]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.411 [id=1020]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+=== Starting testDontOverwriteInMigration(hudson.plugins.sonar.SonarGlobalConfigurationTest)
+   0.009 [id=1051]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:33603/jenkins/
+   0.040 [id=1057]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.043 [id=1063]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.213 [id=1060]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.214 [id=1060]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.413 [id=1057]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.415 [id=1062]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.436 [id=1064]	WARNING	j.s.DeprecatedAgentProtocolMonitor#initializerCheck: This Jenkins instance uses deprecated Remoting protocols: CLI2-connect,JNLP2-connect,JNLP3-connectIt may impact stability of the instance. If newer protocol versions are supported by all system components (agents, CLI and other clients), it is highly recommended to disable the deprecated protocols.
+   0.436 [id=1064]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.448 [id=1051]	WARNING	h.p.s.SonarGlobalConfiguration#lambda$migrateData$0: SonarQube server configurations exist in both deprecated SonarPublisher and SonarGlobalConfiguration. Deleting deprecated configuration..
+   0.453 [id=1051]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.459 [id=1051]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped

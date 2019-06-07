@@ -1,0 +1,23 @@
+# informational; use java -jar sezpoz.jar to see authoritative contents
+hudson.plugins.sonar.MsBuildSQRunnerBegin$DescriptorImpl
+hudson.plugins.sonar.MsBuildSQRunnerEnd$DescriptorImpl
+hudson.plugins.sonar.MsBuildSQRunnerInstallation$DescriptorImpl
+hudson.plugins.sonar.MsBuildSonarQubeRunnerInstaller$MsBuildScannerInstallerDescriptorImpl
+hudson.plugins.sonar.SonarBuildWrapper$DescriptorImpl
+hudson.plugins.sonar.SonarGlobalConfiguration{ordinal=100.0}
+hudson.plugins.sonar.SonarPublisher$DescriptorImpl{optional=true, ordinal=1000.0}
+hudson.plugins.sonar.SonarRunnerBuilder$DescriptorImpl
+hudson.plugins.sonar.SonarRunnerInstallation$DescriptorImpl
+hudson.plugins.sonar.SonarRunnerInstaller$SonarRunnerInstallerDescriptorImpl
+hudson.plugins.sonar.action.SonarBuildBadgeActionFactory
+hudson.plugins.sonar.action.SonarProjectActionFactory
+hudson.plugins.sonar.configurationslicing.SonarPublisherAdditionalPropertiesSlicer{optional=true}
+hudson.plugins.sonar.configurationslicing.SonarPublisherBranchSlicer{optional=true}
+hudson.plugins.sonar.configurationslicing.SonarPublisherJdkSlicer{optional=true}
+hudson.plugins.sonar.configurationslicing.SonarPublisherSQServerSlicer{optional=true}
+hudson.plugins.sonar.configurationslicing.SonarRunnerBuilderJdkSlicer{optional=true}
+hudson.plugins.sonar.configurationslicing.SonarRunnerBuilderSQRunnerSlicer{optional=true}
+hudson.plugins.sonar.configurationslicing.SonarRunnerBuilderSQServerSlicer{optional=true}
+org.sonarsource.scanner.jenkins.pipeline.SonarQubeWebHook
+org.sonarsource.scanner.jenkins.pipeline.SonarQubeWebHookCrumbExclusion
+org.sonarsource.scanner.jenkins.pipeline.WaitForQualityGateStep$DescriptorImpl

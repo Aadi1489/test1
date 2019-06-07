@@ -1,0 +1,3 @@
+hudson.plugins.sonar.action.SonarAnalysisAction
+hudson.plugins.sonar.action.SonarBuildBadgeAction
+hudson.plugins.sonar.model.TriggersConfig$SonarCause

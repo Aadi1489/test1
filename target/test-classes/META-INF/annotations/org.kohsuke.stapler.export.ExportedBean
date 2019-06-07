@@ -1,0 +1,2 @@
+hudson.plugins.sonar.BaseTest$CustomCause
+hudson.plugins.sonar.SonarRunnerBuilderTest$MyBuild

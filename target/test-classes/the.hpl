@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Plugin-Class: hudson.plugins.sonar.SonarPlugin
+Group-Id: org.jenkins-ci.plugins
+Short-Name: sonar
+Long-Name: SonarQube Scanner for Jenkins
+Url: http://redirect.sonarsource.com/plugins/jenkins.html
+Minimum-Java-Version: 1.8
+Plugin-Version: 2.9-SNAPSHOT (private-5a98f7f2-root)
+Hudson-Version: 2.89.4
+Jenkins-Version: 2.89.4
+Plugin-Dependencies: maven-plugin:2.17;resolution:=optional,workflow-s
+ upport:2.18;resolution:=optional,configurationslicing:1.47;resolution
+ :=optional
+Plugin-Developers: 
+Libraries: /opt/git-repo/src/main/resources,/opt/git-repo/target/class
+ es,/root/.m2/repository/com/google/guava/guava/18.0/guava-18.0.jar,/r
+ oot/.m2/repository/com/google/protobuf/protobuf-java/3.0.0-beta-2/pro
+ tobuf-java-3.0.0-beta-2.jar,/root/.m2/repository/com/squareup/okhttp3
+ /okhttp/3.7.0/okhttp-3.7.0.jar,/root/.m2/repository/com/squareup/okio
+ /okio/1.12.0/okio-1.12.0.jar,/root/.m2/repository/commons-io/commons-
+ io/2.5/commons-io-2.5.jar,/root/.m2/repository/org/apache/commons/com
+ mons-lang3/3.7/commons-lang3-3.7.jar,/root/.m2/repository/org/sonarso
+ urce/sonarqube/sonar-ws/6.7/sonar-ws-6.7.jar
+Resource-Path: /opt/git-repo/src/main/webapp
+

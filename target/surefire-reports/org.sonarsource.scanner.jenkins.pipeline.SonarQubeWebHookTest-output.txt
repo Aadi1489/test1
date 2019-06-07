@@ -1,0 +1,99 @@
+=== Starting invalidPayload(org.sonarsource.scanner.jenkins.pipeline.SonarQubeWebHookTest)
+   0.009 [id=2074]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:38590/jenkins/
+   0.096 [id=2080]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.098 [id=2084]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.266 [id=2086]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.266 [id=2086]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.449 [id=2080]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.451 [id=2080]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.474 [id=2087]	WARNING	j.s.DeprecatedAgentProtocolMonitor#initializerCheck: This Jenkins instance uses deprecated Remoting protocols: CLI2-connect,JNLP2-connect,JNLP3-connectIt may impact stability of the instance. If newer protocol versions are supported by all system components (agents, CLI and other clients), it is highly recommended to disable the deprecated protocols.
+   0.597 [id=2084]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   1.608 [id=2076]	INFO	o.s.s.j.p.SonarQubeWebHook#doIndex: Received POST from 127.0.0.1
+   1.643 [id=2076]	WARNING	o.s.s.j.p.SonarQubeWebHook#doIndex: Invalid payload foo
+net.sf.json.JSONException: A JSONObject text must begin with '{' at character 1 of foo
+	at net.sf.json.util.JSONTokener.syntaxError(JSONTokener.java:499)
+	at net.sf.json.JSONObject._fromJSONTokener(JSONObject.java:919)
+	at net.sf.json.JSONObject._fromString(JSONObject.java:1145)
+	at net.sf.json.JSONObject.fromObject(JSONObject.java:162)
+	at net.sf.json.JSONObject.fromObject(JSONObject.java:132)
+	at org.sonarsource.scanner.jenkins.pipeline.SonarQubeWebHook.doIndex(SonarQubeWebHook.java:71)
+	at java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:627)
+	at org.kohsuke.stapler.Function$MethodFunction.invoke(Function.java:343)
+	at org.kohsuke.stapler.interceptor.RequirePOST$Processor.invoke(RequirePOST.java:77)
+	at org.kohsuke.stapler.PreInvokeInterceptedFunction.invoke(PreInvokeInterceptedFunction.java:26)
+	at org.kohsuke.stapler.Function.bindAndInvoke(Function.java:184)
+	at org.kohsuke.stapler.Function.bindAndInvokeAndServeResponse(Function.java:117)
+	at org.kohsuke.stapler.IndexDispatcher.dispatch(IndexDispatcher.java:26)
+	at org.kohsuke.stapler.Stapler.tryInvoke(Stapler.java:715)
+	at org.kohsuke.stapler.Stapler.invoke(Stapler.java:845)
+	at org.kohsuke.stapler.MetaClass$10.dispatch(MetaClass.java:374)
+	at org.kohsuke.stapler.Stapler.tryInvoke(Stapler.java:715)
+	at org.kohsuke.stapler.Stapler.invoke(Stapler.java:845)
+	at org.kohsuke.stapler.Stapler.invoke(Stapler.java:649)
+	at org.kohsuke.stapler.Stapler.service(Stapler.java:238)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:841)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1650)
+	at hudson.util.PluginServletFilter$1.doFilter(PluginServletFilter.java:154)
+	at hudson.util.PluginServletFilter.doFilter(PluginServletFilter.java:157)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.sonarsource.scanner.jenkins.pipeline.SonarQubeWebHookCrumbExclusion.process(SonarQubeWebHookCrumbExclusion.java:45)
+	at hudson.security.csrf.CrumbFilter.doFilter(CrumbFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at hudson.security.ChainedServletFilter$1.doFilter(ChainedServletFilter.java:84)
+	at hudson.security.ChainedServletFilter.doFilter(ChainedServletFilter.java:90)
+	at hudson.security.HudsonFilter.doFilter(HudsonFilter.java:171)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.kohsuke.stapler.compression.CompressionFilter.doFilter(CompressionFilter.java:49)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at hudson.util.CharacterEncodingFilter.doFilter(CharacterEncodingFilter.java:82)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.kohsuke.stapler.DiagnosticThreadNameFilter.doFilter(DiagnosticThreadNameFilter.java:30)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:564)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:317)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:110)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.Invocable.invokePreferred(Invocable.java:128)
+	at org.eclipse.jetty.util.thread.Invocable$InvocableExecutor.invoke(Invocable.java:222)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:294)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:126)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+   2.007 [id=2074]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   2.013 [id=2074]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+=== Starting testListener(org.sonarsource.scanner.jenkins.pipeline.SonarQubeWebHookTest)
+   0.020 [id=2112]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:40530/jenkins/
+   0.053 [id=2118]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.054 [id=2123]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.227 [id=2121]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.227 [id=2124]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.497 [id=2124]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.499 [id=2119]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.515 [id=2125]	WARNING	j.s.DeprecatedAgentProtocolMonitor#initializerCheck: This Jenkins instance uses deprecated Remoting protocols: CLI2-connect,JNLP2-connect,JNLP3-connectIt may impact stability of the instance. If newer protocol versions are supported by all system components (agents, CLI and other clients), it is highly recommended to disable the deprecated protocols.
+   0.574 [id=2124]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.754 [id=2114]	INFO	o.s.s.j.p.SonarQubeWebHook#doIndex: Received POST from 127.0.0.1
+   0.845 [id=2140]	INFO	o.s.s.j.p.SonarQubeWebHook#doIndex: Received POST from 127.0.0.1
+   0.848 [id=2143]	INFO	o.s.s.j.p.SonarQubeWebHook#doIndex: Received POST from 127.0.0.1
+   0.888 [id=2112]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.893 [id=2112]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped

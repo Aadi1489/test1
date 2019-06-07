@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.sonarsource.scanner.jenkins.pipeline.WaitForQualityGateStepTest
+-------------------------------------------------------------------------------
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 88.473 s - in org.sonarsource.scanner.jenkins.pipeline.WaitForQualityGateStepTest

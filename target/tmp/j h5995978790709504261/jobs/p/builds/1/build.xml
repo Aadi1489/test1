@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-build>
+  <actions>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
+      <stagesUUID>a44c2979-e013-485b-a024-b386ff3ba773</stagesUUID>
+      <stagesList>
+        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStages>
+          <stages>
+            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <name>Scan 1</name>
+              <agent>
+                <agentType>
+                  <key>any</key>
+                </agentType>
+              </agent>
+              <branches>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                  <name>default</name>
+                  <steps>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTTreeStep>
+                      <name>dir</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>path</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="string">project1</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                        </arguments>
+                      </args>
+                      <children>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTTreeStep>
+                          <name>withSonarQubeEnv</name>
+                          <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTSingleArgument">
+                            <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$1">
+                              <value class="string">default</value>
+                            </value>
+                          </args>
+                          <children>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                              <name>writeFile</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                <arguments class="linked-hash-map">
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>file</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                                      <value class="string">foo/report-task.txt</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>text</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                                      <value class="string">dashboardUrl=http://localhost:41893/sonarqube/dashboard
+ceTaskId=fakeTaskId1
+serverUrl=http://localhost:41893/sonarqube
+projectKey=foo</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>encoding</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                                      <value class="string">utf-8</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                                  </entry>
+                                </arguments>
+                              </args>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                              <name>sh</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                <arguments class="linked-hash-map">
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>script</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                                      <value class="string">mvn -version</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                                  </entry>
+                                </arguments>
+                              </args>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                          </children>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTTreeStep>
+                      </children>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTTreeStep>
+                  </steps>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+              </branches>
+            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <name>Quality Gate 1</name>
+              <branches>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                  <name>default</name>
+                  <steps>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>waitForQualityGate</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>abortPipeline</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                              <value class="boolean">true</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-1>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                  </steps>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+              </branches>
+            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+          </stages>
+          <uuid>a44c2979-e013-485b-a024-b386ff3ba773</uuid>
+        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStages>
+      </stagesList>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
+    <hudson.plugins.sonar.action.SonarMarkerAction/>
+    <hudson.plugins.sonar.action.SonarAnalysisAction>
+      <installationName>default</installationName>
+      <ceTaskId>fakeTaskId1</ceTaskId>
+      <url>http://localhost:41893/sonarqube/dashboard</url>
+      <serverUrl>http://localhost:41893/sonarqube</serverUrl>
+      <isNew>true</isNew>
+      <isSkipped>false</isSkipped>
+    </hudson.plugins.sonar.action.SonarAnalysisAction>
+  </actions>
+  <queueId>38</queueId>
+  <timestamp>1557994410970</timestamp>
+  <startTime>1557994410972</startTime>
+  <duration>0</duration>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>pipeline {
+  agent none
+  stages {
+    stage(&quot;Scan 1&quot;) {
+      agent any
+      steps {
+        dir(path: &apos;project1&apos;) {
+          withSonarQubeEnv(&apos;default&apos;) {
+            writeFile file: &apos;foo/report-task.txt&apos;, text: &apos;dashboardUrl=http://localhost:41893/sonarqube/dashboard\nceTaskId=fakeTaskId1\nserverUrl=http://localhost:41893/sonarqube\nprojectKey=foo&apos;, encoding: &apos;utf-8&apos;
+            sh &apos;mvn -version&apos;
+          }
+        }
+      }
+    }
+    stage(&quot;Quality Gate 1&quot;) {
+      steps {
+        waitForQualityGate abortPipeline: true
+      }
+    }
+  }
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>52787868</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>204298119</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>533850633</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>58853063</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>85339511</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>23</iota>
+    <head>1:23</head>
+    <start>2</start>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <logsToCopy class="java.util.concurrent.ConcurrentSkipListMap" serialization="custom">
+    <unserializable-parents/>
+    <java.util.concurrent.ConcurrentSkipListMap>
+      <default/>
+      <string>21</string>
+      <long>0</long>
+      <string>23</string>
+      <long>0</long>
+      <null/>
+    </java.util.concurrent.ConcurrentSkipListMap>
+  </logsToCopy>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

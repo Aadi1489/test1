@@ -1,0 +1,2 @@
+hudson.plugins.sonar.action.SonarAnalysisAction
+hudson.plugins.sonar.action.SonarBuildBadgeAction

@@ -1,0 +1,36 @@
+=== Starting testAnalysisPropertiesUnix(hudson.plugins.sonar.SonarInstallationTest)
+   0.015 [id=1082]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:39443/jenkins/
+   0.048 [id=1088]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.051 [id=1092]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.222 [id=1089]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.223 [id=1095]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.530 [id=1093]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.532 [id=1094]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.554 [id=1095]	WARNING	j.s.DeprecatedAgentProtocolMonitor#initializerCheck: This Jenkins instance uses deprecated Remoting protocols: CLI2-connect,JNLP2-connect,JNLP3-connectIt may impact stability of the instance. If newer protocol versions are supported by all system components (agents, CLI and other clients), it is highly recommended to disable the deprecated protocols.
+   0.554 [id=1092]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.561 [id=1082]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.568 [id=1082]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+=== Starting testRoundtrip(hudson.plugins.sonar.SonarInstallationTest)
+   0.008 [id=1113]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:33272/jenkins/
+   0.038 [id=1119]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.039 [id=1124]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.204 [id=1124]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.204 [id=1122]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.588 [id=1125]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.591 [id=1121]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.607 [id=1124]	WARNING	j.s.DeprecatedAgentProtocolMonitor#initializerCheck: This Jenkins instance uses deprecated Remoting protocols: CLI2-connect,JNLP2-connect,JNLP3-connectIt may impact stability of the instance. If newer protocol versions are supported by all system components (agents, CLI and other clients), it is highly recommended to disable the deprecated protocols.
+   0.737 [id=1126]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.756 [id=1113]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.764 [id=1113]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+=== Starting testAnalysisPropertiesWindows(hudson.plugins.sonar.SonarInstallationTest)
+   0.018 [id=1144]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:39575/jenkins/
+   0.059 [id=1150]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.061 [id=1154]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.231 [id=1156]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.231 [id=1152]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.376 [id=1152]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.378 [id=1152]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.398 [id=1153]	WARNING	j.s.DeprecatedAgentProtocolMonitor#initializerCheck: This Jenkins instance uses deprecated Remoting protocols: CLI2-connect,JNLP2-connect,JNLP3-connectIt may impact stability of the instance. If newer protocol versions are supported by all system components (agents, CLI and other clients), it is highly recommended to disable the deprecated protocols.
+   0.398 [id=1153]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.405 [id=1144]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.412 [id=1144]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
